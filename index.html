@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+  </head>
+	<body style="margin:0px; overflow:hidden;">
+		<!-- Load A-Frame -->
+		<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+		<!-- Load A-Frame AR -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+		<!-- A-Frame sence -->
+    <a-scene embedded arjs="debugUIEnabled:false;">
+			<a-assets>
+			  <!-- <a-assets-item id="id" src="/assets/<file>"> -->
+			</a-assets>
+
+      <a-marker markerhandler type='pattern' url="/assets/marker.patt">
+				<!-- Scene objects -->
+			</a-marker>
+
+			<!-- Camera -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
